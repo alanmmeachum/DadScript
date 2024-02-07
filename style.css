@@ -176,6 +176,7 @@ li:not(#DadLineItem) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-width: 1320px;
     border-top: 0.07em solid black;
     padding-top: 50px;
     background-image:url(Untitled\ design\ \(2\).png);
