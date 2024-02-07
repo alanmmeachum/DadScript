@@ -13,9 +13,14 @@
 /* Page reset ↑  */
 
 /* ↓  Image resizing ↓  */
-#DadScriptLogo {
+#DadScriptLogo, #DadScriptLogo2 {
     min-width: 6.25em;
     max-width: 18.75em;
+}
+
+#DadScriptLogo2 {
+    background-image:url(Untitled\ design\ \(2\).png);
+    border-image: none;
 }
 
 .placeholder_image {
@@ -27,9 +32,6 @@
     /* border: red solid 1px; */
 }
 
-#bottompageicons {
-
-}
 /* ↑ Image resizing ↑ */
 
 /* ↓  Building Header ↓  */
@@ -44,13 +46,11 @@
 
 ul {
     display: flex;
-    width: 50%;
+    width: auto;
     align-items: flex-end;
     justify-content: center;
     list-style: none;
-    margin-block-start: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin: 0;
 }
 /* ↑ Building Header ↑ */
 
@@ -58,6 +58,7 @@ ul {
 /* ↓  Design on header list elements ↓  */
 li {
     padding: 0em 1.25em;
+    white-space: nowrap;
 }
 li:not(#DadLineItem):hover {
     background-color: hsl(43, 100%, 71%);
@@ -129,7 +130,6 @@ li:not(#DadLineItem) {
     margin-inline-start: 0px;
     margin-left: 0px;
     margin-right: 0px;
-    margin-top: 15px;
     padding-bottom: 0px;
     padding-inline-start: 0px;
     padding-left: 0px;
@@ -147,11 +147,17 @@ li:not(#DadLineItem) {
 }
 
 .categories_label {
-    display: block;
+    display: flex;
+    justify-content: center;
+    margin: auto;
     background-color: hsl(43, 100%, 71%);
     font-size: 22px;
     text-align: center;
     font-weight: bold;
+}
+
+.blog_column {
+    margin-top: 15px;
 }
 /* ↑ Main Content ↑ */
 
@@ -171,6 +177,7 @@ li:not(#DadLineItem) {
     margin: auto;
     border-top: 0.07em solid black;
     padding-top: 50px;
+    background-image:url(Untitled\ design\ \(2\).png);
 }
 
 .bottom_of_page_row {
@@ -179,6 +186,7 @@ li:not(#DadLineItem) {
     justify-content: center;
     align-items: center;
     margin: auto;
+    width: auto;
     padding-top: 10px;
 }
 /* ↑ Bottom Of Page ↑ */
