@@ -9,6 +9,10 @@
     line-height: var(--lh-base);
     background-color: white;
 }
+
+:root {
+    --yellow:hsl(43, 100%, 71%);
+}
 /* Page reset ↑  */
 
 /* ↓  Image resizing ↓  */
@@ -64,7 +68,7 @@ li {
     white-space: nowrap;
 }
 li:not(#DadLineItem):hover {
-    background-color: hsl(43, 100%, 71%);
+    background-color: var(--yellow);
     color: black;
     cursor: pointer;
 }
