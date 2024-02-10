@@ -1,0 +1,103 @@
+* {
+    margin: 0em;
+    border: 0em;
+    padding: 0em;
+    box-sizing:  border-box;
+    vertical-align: top;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: var(--fs-base);
+    line-height: var(--lh-base);
+    background-color: white;
+}
+/* ↑ Page reset ↑  */
+
+/* ↓  Image resizing ↓  */
+
+/* ↑ Image resizing ↑ */
+
+/* ↓ Main Content ↓  */
+
+.body_container {
+    display: flex;
+    flex-direction: row;
+    max-width: 75em;
+    min-width: 1320px;
+    color: black;
+    /* border: 0.07em dotted red; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left_column, .right_column {
+    flex-direction: column;
+    flex: 2;
+    margin: 10px;
+    /* border: 0.07em dotted green; */
+}
+
+.individual_blocks {
+    margin-bottom: 20px;
+    width: auto;
+    border: 0.07em solid silver;
+    padding: 20px;
+}
+
+#blog_categories {
+    flex: 1.2;
+    box-sizing: border-box;
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28.8px;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    text-size-adjust: 100%;
+    }
+
+.blog_line_item {
+    color: black;
+    border-bottom-color: black;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    text-align: left;
+    background-color: silver;
+}
+
+.categories_label {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background-color: var(--custom-background-color2);
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.blog_column {
+    margin-top: 15px;
+}
+/* ↑ Main Content ↑ */
+
+/* ↓ Main Content - Functionality ↓  */
+.individual_blocks:hover {
+    background-color: var(--custom-background-color2);
+    opacity: .7;
+}
+
+.blog_line_item:hover {
+    background-color: var(--custom-background-color2);
+}
+/* ↑ Main Content - Functionality ↑ */
+
+
+/* ↓ Bottom Of Page ↓  */
+.bottom_of_page,  #copywrite {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    background-color: var(--custom-background-color);
+}
+/* ↑ Bottom Of Page ↑ */

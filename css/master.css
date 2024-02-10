@@ -1,11 +1,129 @@
-.body_container {
+/* ↓  Page Reset ↓  */
+* {
+    margin: 0em;
+    border: 0em;
+    padding: 0em;
+    box-sizing:  border-box;
+    vertical-align: top;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: var(--fs-base);
+    line-height: var(--lh-base);
+    background-color: white;
+}
+/* ↑ Page reset ↑  */
+
+/* ↓  Define Page Colors ↓  */
+:root {
+    --custom-background-color: hsla(200, 70%, 49%, 1);
+    --custom-background-color2:hsla(42, 100%, 63%, 1);
+    --custom-linear-gradient: linear-gradient(90deg, var(--custom-background-color) 0%, hsla(42, 100%, 63%, 1) 100%);
+}
+.background {
+    background: hsla(200, 70%, 49%, 1);
+    background: linear-gradient(90deg, hsla(200, 70%, 49%, 1) 0%, hsla(42, 100%, 63%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(200, 70%, 49%, 1) 0%, hsla(42, 100%, 63%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(200, 70%, 49%, 1) 0%, hsla(42, 100%, 63%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#269bd6", endColorstr="#ffc540", GradientType=1 );
+}
+/* ↑ Define Page Colors ↑  */
+
+/* ↓  Link Default Style Removal ↓  */
+a {
+    color: black;
+    text-decoration: none;
+}
+/* ↑ Link Default Style Removal ↑  */
+
+/* ↓  Image resizing ↓  */
+#DadScriptLogo, #DadScriptLogo2 {
+    min-width: 6.25em;
+    max-width: 18.75em;
+}
+#DadScriptLogo {
+    margin: 20px 10px 0px;
+}
+.bottompageicons {
+    background-color: var(--custom-background-color);
+}
+.placeholder_image {
+    display: block;
+    max-height: 300px;
+    object-fit: contain;
+    object-position: center;
+    margin: auto;
+    /* border: red solid 1px; */
+}
+
+/* ↑ Image resizing ↑ */
+
+/* ↓  Building Header ↓  */
+.header {
+    display: flex;
+    flex-direction: row;
+    min-width: 1320px;
+    color: black;
+    justify-content: center;
+    align-items: flex-end;
+    border-bottom: 1px solid black;
+}
+ul {
+    display: flex;
+    width: auto;
+    align-items: flex-end;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+}
+/* ↑ Building Header ↑ */
+
+
+/* ↓  Design on header list elements ↓  */
+li {
+    white-space: nowrap;
+    padding: 0px 15px;
+    font-size: 18px;
+}
+li:not(#DadLineItem).grow {
+    cursor: pointer;
+}
+li:not(#DadLineItem) {
+    border-right: 0.063em solid black;
+    border-left: 0.063em solid black;;
+}
+/* ↑ Design on header list elements ↑ */
+
+/* ↓ Page Title ↓  */
+.page_title {
+    display: flex;
+    min-width: 1320px;
+    align-items: flex-end;
+    color: black;
+    font-size: 3.125em;
+    padding: 1% 0% 1% 20%;
+    font-weight: bolder;
+}
+/* ↑ Page Title ↑ */
+
+/* ↓ Bottom Of Page ↓  */
+.bottom_of_page,  #copywrite {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    background-color: var(--custom-background-color);
+}
+/* ↑ Bottom Of Page ↑ */
+
+/* ↓ Body Transition ↓  */
+.body_container, .page_title {
     animation: transitionIn 1s;
 }
 
 @keyframes transitionIn {
     from {
         opacity: 0;
-        transform: rotateX(-10deg);
+        transform: rotateX(-15deg);
     }
 
     to {
@@ -13,3 +131,15 @@
         transform: rotateX(0);
     }
 }
+/* ↑ Body Transition ↑ */
+
+/* ↓ Header Tabs Styling ↓  */
+.grow, .individual_blocks { 
+    transition: all .2s ease; 
+}
+.grow:hover { 
+transform: scale(1.1);
+font-weight: bolder; 
+}
+/* ↑ Header Tabs Styling ↑ */
+
