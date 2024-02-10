@@ -113,6 +113,10 @@ li:not(#DadLineItem) {
     padding-top: 10px;
     background-color: var(--custom-background-color);
 }
+
+#copywrite {
+    margin: 0;
+}
 /* ↑ Bottom Of Page ↑ */
 
 /* ↓ Body Transition ↓  */
@@ -134,11 +138,11 @@ li:not(#DadLineItem) {
 /* ↑ Body Transition ↑ */
 
 /* ↓ Header Tabs Styling ↓  */
-.grow, .individual_blocks { 
+.grow { 
     transition: all .2s ease; 
 }
 .grow:hover { 
-transform: scale(1.1);
+transform:scaleY(1.3);
 font-weight: bolder; 
 }
 /* ↑ Header Tabs Styling ↑ */

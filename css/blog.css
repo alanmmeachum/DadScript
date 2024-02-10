@@ -12,16 +12,26 @@
 /* ↑ Page reset ↑  */
 
 /* ↓  Image resizing ↓  */
-
+#firstblogimage {
+    height: 400px;
+    width: 500px;
+    padding-bottom: 30px;
+}
 /* ↑ Image resizing ↑ */
 
 /* ↓ Main Content ↓  */
-
+h2 {
+    font-size: 2.8em;
+}
+.dateitem {
+    color: grey;
+    font-style: italic;
+}
 .body_container {
     display: flex;
     flex-direction: row;
     max-width: 75em;
-    min-width: 1320px;
+    min-width: 900px;
     color: black;
     /* border: 0.07em dotted red; */
     margin-left: auto;
@@ -36,10 +46,14 @@
 }
 
 .individual_blocks {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 20px;
     width: auto;
+    align-items: center;
     border: 0.07em solid silver;
     padding: 20px;
+    line-height: 2;
 }
 
 #blog_categories {
@@ -57,9 +71,7 @@
 
 .blog_line_item {
     color: black;
-    border-bottom-color: black;
-    border-bottom-style: dotted;
-    border-bottom-width: 1px;
+    border: black dotted 1px;
     text-align: left;
     background-color: silver;
 }
@@ -81,16 +93,31 @@
 
 /* ↓ Main Content - Functionality ↓  */
 .individual_blocks:hover {
-    background-color: var(--custom-background-color2);
-    opacity: .7;
+    box-shadow: 0px 0px 20px var(--custom-background-color2);
 }
 
 .blog_line_item:hover {
     background-color: var(--custom-background-color2);
+    font-weight: bold;
 }
+
 /* ↑ Main Content - Functionality ↑ */
 
+/* ↓ Buttons ↓  */
+.readthefullblogbutton {
+    min-width: 20px;
+    border: 2px black solid;
+    border-radius: 25px;
+    padding: 5px 20px;
+    font-weight: bold;
+    background-color: var(--custom-background-color2);
+}
 
+.readthefullblogbutton:hover {
+    color: white;
+    cursor: pointer;
+}
+/* ↑ Buttons ↑ */
 /* ↓ Bottom Of Page ↓  */
 .bottom_of_page,  #copywrite {
     display: flex;

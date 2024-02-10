@@ -1,0 +1,50 @@
+.body_container {
+    margin: auto;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    text-justify: auto;
+    text-indent: 20px;
+    text-rendering: auto;
+    padding-bottom: 150px;
+}
+
+#pictureofme {
+    width: 600px;
+    box-shadow: 40px 20px 10px  var(--custom-background-color2);
+    margin: 0px 0px 100px;
+    border-radius: 25px;
+}
+
+p {
+    font-size: 1.3em;
+    line-height: 2.2em;
+    margin-bottom: 2.2em;
+}
+
+.make_italics {
+    font-style: italic;
+}
+
+.page_title {
+    margin: 0;
+}
+
+button {
+    min-width: 130px;
+    border: 2px black solid;
+    border-radius: 25px;
+    padding: 5px 20px;
+    font-weight: bold;
+    font-size: 1.8em;
+    background-color: var(--custom-background-color2);
+}
+
+button:hover {
+    color: white;
+    background-color: var(--custom-background-color);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.751);
+    border-color: white;
+}
