@@ -1,0 +1,44 @@
+/* ↓ Body Container ↓ */
+.body_container {
+    /* display: flex;
+    flex-direction: column; */
+    max-width: 75em;
+    min-width: 900px;
+    color: black;
+    margin: auto;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* ↓ Form ↓ */
+form{
+    padding: 20px;
+    border: 2px #ccc solid;
+    border-radius: 5px;
+}
+input[type=text],input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=submit] {
+    background-color: #04aa6d;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+p {
+    padding: 20px 0px;
+}
+/* ↑ Form ↑ */
+
+/* ↑ Body Container ↑ */

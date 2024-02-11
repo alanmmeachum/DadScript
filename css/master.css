@@ -76,7 +76,6 @@ ul {
 }
 /* ↑ Building Header ↑ */
 
-
 /* ↓  Design on header list elements ↓  */
 li {
     white-space: nowrap;
@@ -102,17 +101,17 @@ li:not(#DadLineItem).grow {
 /* ↑ Page Title ↑ */
 
 /* ↓ Bottom Of Page ↓  */
-.bottom_of_page,  #copywrite {
+.bottom_of_page, #copywrite{
     display: flex;
     flex-direction: row;
+    width: 100%;
     justify-content: center;
     align-items: center;
     padding-top: 10px;
     background-color: var(--custom-background-color);
 }
-
 #copywrite {
-    margin: 0;
+    margin: auto;
 }
 /* ↑ Bottom Of Page ↑ */
 
