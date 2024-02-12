@@ -18,13 +18,6 @@
     --custom-background-color2:hsla(42, 100%, 63%, 1);
     --custom-linear-gradient: linear-gradient(90deg, var(--custom-background-color) 0%, hsla(42, 100%, 63%, 1) 100%);
 }
-.background {
-    background: hsla(200, 70%, 49%, 1);
-    background: linear-gradient(90deg, hsla(200, 70%, 49%, 1) 0%, hsla(42, 100%, 63%, 1) 100%);
-    background: -moz-linear-gradient(90deg, hsla(200, 70%, 49%, 1) 0%, hsla(42, 100%, 63%, 1) 100%);
-    background: -webkit-linear-gradient(90deg, hsla(200, 70%, 49%, 1) 0%, hsla(42, 100%, 63%, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#269bd6", endColorstr="#ffc540", GradientType=1 );
-}
 /* ↑ Define Page Colors ↑  */
 
 /* ↓  Link Default Style Removal ↓  */
